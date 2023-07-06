@@ -5,37 +5,51 @@
     <title>Taste the World</title>
     <link rel="stylesheet" href="mp1.css" />
     <a href="https://www.flaticon.com/free-icons/box" title="box icons"></a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div class="bg-image">
       <div class="bg-content">
         <div class="bg-content-inner">
-          <div class="navbar">
-            <ul class="links">
+          <header>
+            <div class="navbar">
+              <ul class="links">
+                <li><a href="home">Home</a></li>
+                <li><a href="about">About Us</a></li>
+                <li><a href="contact">Contact Us</a></li>
+              </ul>
+              <div>
+                <img class="toggle-btn" src="menu.png" />
+              </div>
+            </div>
+
+            <div class="dropdown-menu">
               <li><a href="home">Home</a></li>
               <li><a href="about">About Us</a></li>
               <li><a href="contact">Contact Us</a></li>
-            </ul>
-            <div>
-              <img class="toggle-btn" src="menu.png" />
             </div>
-          </div>
 
-          <div class="dropdown-menu">
-            <li><a href="home">Home</a></li>
-            <li><a href="about">About Us</a></li>
-            <li><a href="contact">Contact Us</a></li>
-          </div>
+            <script>
+              const togglebtn = document.querySelector(".toggle-btn");
+              const togglebtnIcon = document.querySelector(".toggle-btn i");
+              const dropDownMenu = document.querySelector(".dropdown-menu");
 
-          <script>
-            const togglebtn = document.querySelector(".toggle-btn");
-            const togglebtnIcon = document.querySelector(".toggle-btn i");
-            const dropDownMenu = document.querySelector(".dropdown-menu");
+              window.addEventListener("scroll", function () {
+                var header = document.querySelector("header");
+                header.classList.toggle("sticky", window.scrollY > 0);
+              });
 
-            togglebtn.onclick = function () {
-              dropDownMenu.classList.toggle("open");
-            };
-          </script>
+              togglebtn.onclick = function () {
+                dropDownMenu.classList.toggle("open");
+              };
+            </script>
+          </header>
 
           <h1>Taste the World</h1>
           <a href="order-now-page.html">

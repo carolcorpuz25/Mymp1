@@ -2,22 +2,91 @@
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
     <title>Menu</title>
     <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
       body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
         background-color: rgb(54, 102, 104);
       }
 
-      .korea-flag {
-        width: 30%;
+      .container {
+        position: relative;
+        width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
       }
+
+      .container .card {
+        position: relative;
+        max-width: 450px;
+        background-color: #fff;
+        margin: 10px;
+        padding: 15px;
+        display: flex;
+      }
+
+      .container .card .imgbx {
+        max-width: 150px;
+      }
+
+      .container .card .imgbx img {
+        max-width: 100%;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
     </style>
   </head>
 
   <body>
-    <div class="korea-container">
-      <img class="korea-flag" src="south-korea.png" />
-      <h3>Grill Menu</h3>
+    <div class="container">
+      <div class="card">
+        <div class="imgbx">
+           <img src="samgyeopsal.jpg" />
+          </div>
+          <div class="content">
+            <h2>Pork belly</h2>
+            <h4>500 pesos (15 pcs)</h4>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="imgbx">
+           <img src="Woo-Samgyup.png" />
+          </div>
+          <div class="content">
+            <h2>Pork belly</h2>
+            <h4>500 pesos (15 pcs)</h4>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="imgbx">
+           <img src="samgyup-flavors.png" />
+          </div>
+          <div class="content">
+            <h2>Pork belly</h2>
+            <h4>500 pesos (15 pcs)</h4>
+          </div>
+        </div>
+      </div>
     </div>
+    
   </body>
 </html>
