@@ -10,6 +10,33 @@
     <div class="bg-image">
       <div class="bg-content">
         <div class="bg-content-inner">
+          <div class="navbar">
+            <ul class="links">
+              <li><a href="home">Home</a></li>
+              <li><a href="about">About Us</a></li>
+              <li><a href="contact">Contact Us</a></li>
+            </ul>
+            <div>
+              <img class="toggle-btn" src="menu.png" />
+            </div>
+          </div>
+
+          <div class="dropdown-menu">
+            <li><a href="home">Home</a></li>
+            <li><a href="about">About Us</a></li>
+            <li><a href="contact">Contact Us</a></li>
+          </div>
+
+          <script>
+            const togglebtn = document.querySelector(".toggle-btn");
+            const togglebtnIcon = document.querySelector(".toggle-btn i");
+            const dropDownMenu = document.querySelector(".dropdown-menu");
+
+            togglebtn.onclick = function () {
+              dropDownMenu.classList.toggle("open");
+            };
+          </script>
+
           <h1>Taste the World</h1>
           <a href="order-now-page.html">
             <button class="order-now-button">Order Now</button>
@@ -25,7 +52,7 @@
             <img class="flags" src="china.png" />
           </div>
 
-          <div class="about-us">About Us</div>
+          <div class="about-us" id="about">About Us</div>
           <h4>
             There's nothing cut out about 'Taste the World', not our food. Also,
             unquestionably not the manner in which we live. <br />
@@ -42,15 +69,17 @@
           <h3>Delivered</h3>
           <h4>We make sure that your food delivered, hot and satisfied you</h4>
 
-          <div class="information-container">
-            <h3 class="information">Information</h3>
-            <ul class="no-dot">
-              <li><a href="about-us"></a>About Us</li>
-              <li>Delivery Information</li>
-              <li>Privacy Policy</li>
-              <li>Terms & Conditions</li>
-            </ul>
-          </div>
+          <nav>
+            <div class="information-container">
+              <h3 class="information">Information</h3>
+              <nav>
+                <a class="information-content" href="#about">About Us</a>
+              </nav>
+              <div class="information-content">Delivery Information</div>
+              <div class="information-content">Privacy Policy</div>
+              <div class="information-content">Terms & Conditions</div>
+            </div>
+          </nav>
 
           <div class="contact-us-container">
             <h3 class="contact-us">Contact Us</h3>

@@ -1,7 +1,7 @@
 body {
   background-color: rgb(54, 102, 104);
-  
 }
+
 .bg-image {
   position: relative;
   width: 100%;
@@ -19,6 +19,81 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+a:hover {
+background-color: rgb(3, 160, 160);
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar {
+  width: 100%;
+  height: 60px;
+  max-width: 100px;
+  margin: 0 10%;
+  display: flex;
+  justify-content: end;
+  align-items: center
+} 
+
+.navbar .links {
+  display: flex;
+  gap: 3rem;
+}
+
+.toggle-btn {
+  background-color:rgb(32, 93, 95);
+  padding: 3px;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+  margin-left: 800%;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 200px;
+  height: 0;
+  background-color: rgba(19, 71, 95, 0.5);
+  border-radius: 5px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+  height: 110px;
+}
+
+.dropdown-menu li {
+  padding: 0.6rem;
+  display: flex;
+  justify-content: center;
+}
+ 
+@media (max-width:400px) {
+  .navbar .links {
+    display: none;
+  }
+  .dropdown-menu {
+    display: block;
+  }
 }
 
 .bg-content {
@@ -61,7 +136,7 @@ body {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   color: whitesmoke;
-  margin-top: 50%;
+  margin-top: 80%;
   padding: 10px;
 }
 
@@ -69,9 +144,9 @@ h4 {
   margin-top: 0;
   color:  rgb(107, 206, 209);
   font-family: Arial, Helvetica, sans-serif;
-  border-radius: 3px;
+  border-radius: 5px;
   box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5);
-  padding: 5px;
+  padding: 10px;
 }
 
 .services {
@@ -79,7 +154,7 @@ h4 {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
   color: whitesmoke;
-  margin-top: 40%;
+  margin-top: 80%;
   padding: 10px;
 }
 
@@ -116,6 +191,7 @@ p {
   height: 50px;
   margin-right: 5px;
   transition: 0.15s;
+  cursor: pointer;
 }
 .flags:hover {
   width: 70px;
@@ -124,23 +200,31 @@ p {
 
 .information-container {
   display: flex;
+  justify-content: left;
+  align-items: center;
   flex-wrap: wrap;
-  width: 25%;
+  width: 40%;
+  
 }
 
 .information {
   color: wheat;
-  margin-top: 70%;
+  margin-top: 100%;
+  margin-left: 8px;
 }
 
-.no-dot {
-  list-style-type: none;
-}
-
-
-li {
+.information-content {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
+  transition: 0.15s;
+  text-decoration: none;
+  color:  rgb(107, 206, 209);
+  margin-left: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+.information-content:hover {
+  background-color: rgb(3, 160, 160);
 }
 
 .contact-us-container {
@@ -168,6 +252,8 @@ li {
 .facebook:hover {
   background-color: rgba(51, 184, 236, 0.5);
   border-radius: 5px;
+  width: 35px;
+  height: 35px;
   
 }
 
