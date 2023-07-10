@@ -3,90 +3,52 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="order-now-page.css" />
     <title>Menu</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-      }
-
-      body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color: rgb(54, 102, 104);
-      }
-
-      .container {
-        position: relative;
-        width: 1000px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-      }
-
-      .container .card {
-        position: relative;
-        max-width: 450px;
-        background-color: #fff;
-        margin: 10px;
-        padding: 15px;
-        display: flex;
-      }
-
-      .container .card .imgbx {
-        max-width: 150px;
-      }
-
-      .container .card .imgbx img {
-        max-width: 100%;
-      }
-
-      img {
-        max-width: 100%;
-      }
-
-    </style>
   </head>
 
   <body>
     <div class="container">
-      <div class="card">
-        <div class="imgbx">
-           <img src="samgyeopsal.jpg" />
-          </div>
-          <div class="content">
-            <h2>Pork belly</h2>
-            <h4>500 pesos (15 pcs)</h4>
-          </div>
+      <p>Grill Menu</p>
+      <div class="card" style="width: 15rem">
+        <img src="samgyeopsal.jpg" class="card-img-top" />
+        <div class="card-body">
+          <h4>Pork Belly</h4>
+          <h6>500 pesos (15 pcs)</h6>
         </div>
       </div>
-  
-      <div class="card">
-        <div class="imgbx">
-           <img src="Woo-Samgyup.png" />
-          </div>
-          <div class="content">
-            <h2>Pork belly</h2>
-            <h4>500 pesos (15 pcs)</h4>
-          </div>
+
+      <div class="card" style="width: 15rem">
+        <img src="Woo-Samgyup.png" class="card-img-top" />
+        <div class="card-body">
+          <h4>Beef Belly</h4>
+          <h5>600 pesos (15 pcs)</h5>
         </div>
       </div>
-  
-      <div class="card">
-        <div class="imgbx">
-           <img src="samgyup-flavors.png" />
-          </div>
-          <div class="content">
-            <h2>Pork belly</h2>
-            <h4>500 pesos (15 pcs)</h4>
-          </div>
+
+      <div class="card" style="width: 15rem">
+        <img src="samgyup-flavors.png" class="card-img-top" />
+        <div class="card-body">
+          <h3>Pork Galbi Sauce</h3>
+          <h5>500 pesos (15 pcs)</h5>
         </div>
       </div>
     </div>
-    
   </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+    integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+    crossorigin="anonymous"
+  ></script>
 </html>
