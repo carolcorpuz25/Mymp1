@@ -16,19 +16,68 @@ body {
   margin-top: 50px;
 }
 
-p {
+.grill-menu {
   width: 160px;
   padding: 5px;
   font-size: 30px;
   color: wheat;
   font-weight: bold;
+  border-radius: 5px;
   background-color: rgba(13, 28, 46, 0.5);
+  display: inline-block;
+}
+
+.flag {
+  object-fit: cover;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 11px;
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .card {
   margin-top: 10px;
   cursor: pointer;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
-.card:hover {
-  background-color: (13, 28, 46, 0.5);
+
+.meal {
+  width: 80px;
+  padding: 5px;
+  font-size: 30px;
+  margin-top: 20px;
+  color: wheat;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgba(13, 28, 46, 0.5);
+  display: inline-block;
+}
+
+.card-img {
+  object-fit:cover ;
+  width: 238px;
+  height: 160px;
+}
+
+.side-menu {
+  width: 160px;
+  padding: 5px;
+  font-size: 30px;
+  margin-top: 20px;
+  color: wheat;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgba(13, 28, 46, 0.5);
+}
+
+.desserts {
+  width: 140px;
+  padding: 5px;
+  font-size: 30px;
+  margin-top: 20px;
+  color: wheat;
+  font-weight: bold;
+  border-radius: 5px;
+  background-color: rgba(13, 28, 46, 0.5);
 }
